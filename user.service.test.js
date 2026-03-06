@@ -1,9 +1,9 @@
-jest.mock('../models/user.model', () => ({
+jest.mock('./models/user.model', () => ({
   create: jest.fn()
 }))
 
-const User = require('../models/user.model')
-const { createUser } = require('../services/user.service')
+const User = require('./models/user.model')
+const { createUser } = require('./services/user.service')
 
 describe('createUser Service', () => {
 
